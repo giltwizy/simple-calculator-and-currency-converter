@@ -12,19 +12,28 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <form action="index.php" method="get">
-            <b>Number 1</b>
-            <input type="number" name="value1" placeholder="First Number">
-            <b>Number 2</b>
-            <input type="number" name="value1" placeholder="Second Number">
-            <
-            
-
-        </form>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
+        <form action="index.php" method="get">
+            <b>Number 1</b>
+            <input type="number" name="value1" placeholder="First Number"/>
+            <b>Number 2</b>
+            <input type="number" name="value1" placeholder="Second Number"/>
+            <select>
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+            <input type="submit" name="calculate" value="calculate"/>
+        </form>
+        <?php
+            if(isset($_GET['calculate'])){
+                
+            }
+        ?>
         <script src="" async defer></script>
     </body>
 </html>
