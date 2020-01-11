@@ -2,3 +2,7 @@ body {
     background-color: lightblue;
     padding: 20% 20% 20% 20%;
   }
+
+  #result{
+      color: brown;
+  }

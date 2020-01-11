@@ -18,10 +18,10 @@
         
         <form action="index.php" method="get">
             <b>Number 1</b>
-            <input type="number" name="value1" placeholder="First Number"/>
+            <input type="text" name="value1" placeholder="First Number"/>
             <b>Number 2</b>
-            <input type="number" name="value1" placeholder="Second Number"/>
-            <select>
+            <input type="text" name="value2" placeholder="Second Number"/>
+            <select name="operator">
                 <option>+</option>
                 <option>-</option>
                 <option>*</option>
@@ -31,9 +31,39 @@
         </form>
         <?php
             if(isset($_GET['calculate'])){
+                $value1 = $_GET['value1'];
+                $value2 = $_GET['value2'];
+                $operator = $_GET['operator'];          
                 
+                
+                switch($operator){
+                    case '+':
+                        echo "<h3 id='result'>Result:";
+                        echo $value1 + $value2;
+                        echo "</h3>";
+                    break;
+                    case '-':
+                        echo "<h3 id='result'>Result:";
+                        echo $value1 - $value2;
+                        echo "</h3>";
+                    break;
+                    case '*':
+                        echo "<h3 id='result'>Result:";
+                        echo $value1 * $value2;
+                        echo "</h3>";
+                    break;
+                    case '/':
+                        echo "<h3 id='result'>Result:";
+                        echo $value1 / $value2;
+                        echo "</h3>";
+                    break;
+                    default:
+                    
+                }
             }
-        ?>
+            ?>
+            
+            
         <script src="" async defer></script>
     </body>
 </html>
