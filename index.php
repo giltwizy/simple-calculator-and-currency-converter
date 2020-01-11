@@ -29,6 +29,7 @@
             </select>
             <input type="submit" name="calculate" value="calculate"/>
         </form>
+        <hr>
         <?php
             if(isset($_GET['calculate'])){
                 $value1 = $_GET['value1'];
@@ -64,6 +65,6 @@
             ?>
             
             
-        <script src="" async defer></script>
+        <script src="./js/script.js" async defer></script>
     </body>
 </html>
