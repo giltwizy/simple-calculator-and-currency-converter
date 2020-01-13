@@ -1,8 +1,20 @@
 body {
     background-color: lightblue;
-    padding: 20% 20% 20% 20%;
+    font-family: 'Source Serif Pro', serif;
   }
 
   #result{
       color: brown;
+  }
+
+  .form{
+    font-family: 'Kaushan Script', cursive;
+  }
+
+  nav {
+    display: block;   
+  }
+
+  .navigation{
+      padding-top: 10%;
   }

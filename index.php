@@ -10,13 +10,17 @@
         <meta name="description" content="Simple calculator">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Source+Serif+Pro&display=swap" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <?php
+            include_once("nav.php");
+        ?>
         
-        <form action="index.php" method="get">
+        <form action="index.php" method="get" class="form">
             <b>Number 1</b>
             <input type="text" name="value1" placeholder="First Number"/>
             <b>Number 2</b>
